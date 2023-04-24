@@ -1,0 +1,39 @@
+.home-root {
+  .tittle-wrapper{
+    padding: 8px;
+  }
+  .table-wrapper {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  h2 {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+  }
+
+  .content-block{
+    display: flex;
+    align-items: center;
+    span{
+      width: 100%;
+      text-align: start;
+      padding: 8px;
+
+    }
+    p{
+
+    }
+  }
+  .content-block:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  .content-block:hover {
+    background-color: #ddd;
+  }
+}

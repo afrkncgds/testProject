@@ -1,0 +1,42 @@
+/* SOCIAL BLOCK START */
+
+.ugc-social-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 99;
+    &.ugc-video-social {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 100%;
+        padding: 20px 0 12px 0;
+        transform: translate(-50%, 0);
+    }
+    a {
+        margin: 0 0 0 32px;
+        &:first-child {
+            margin: 0;
+        }
+        &:hover {
+            path {
+                fill: #FF00FF;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 798px) {
+    .ugc-social-block {
+        a {
+            margin: 0 8px;
+            svg {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+
+/* SOCIAL BLOCK FINISH */

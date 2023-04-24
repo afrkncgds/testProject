@@ -1,0 +1,63 @@
+@mixin font-face($style-name, $family, $category: "") {
+    $filepath: "../fonts/" + $family;
+    @font-face {
+        font-family: "#{$style-name}";
+        src: url($filepath + ".eot");
+        src: url($filepath + ".eot?#iefix") format("embedded-opentype"), url($filepath + ".woff") format("woff"), // url($filepath + ".ttf")  format('truetype'),
+        url($filepath + ".svg#" + $style-name + "") format("svg");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+}
+
+//@include font-face('SharpGroteskBold25-Regular', 'SharpGroteskBold25-Regular', 'serif');
+@mixin font-semibold {
+    font-family: "OpenSans-SemiBold", arial, helvetica, sans-serif;
+    font-weight: normal;
+}
+
+@mixin font-medium {
+    font-family: "OpenSans-Medium", arial, helvetica, sans-serif;
+    font-weight: normal;
+}
+
+@mixin font-regular {
+    font-family: "OpenSans-Regular", arial, helvetica, sans-serif;
+    font-weight: normal;
+}
+
+@mixin font-popins-bold {
+    font-family: "Poppins-Bold", arial, helvetica, sans-serif;
+    font-weight: normal;
+}
+
+@mixin font-extraBold {
+    font-family: "OpenSans-ExtraBold", arial, helvetica, sans-serif;
+    font-weight: normal;
+}
+
+@mixin font-popins-semibold {
+    font-family: "Poppins-SemiBold", arial, helvetica, sans-serif;
+    font-weight: normal;
+}
+
+@mixin font-popins-extrabold {
+    font-family: "Poppins-ExtraBold", arial, helvetica, sans-serif;
+    font-weight: normal;
+}
+
+@mixin font-popins-medium {
+    font-family: "Poppins-Medium", arial, helvetica, sans-serif;
+    font-weight: normal;
+}
+
+@mixin font-popins-extraboldItalic {
+    font-family: "Poppins-ExtraBoldItalic", arial, helvetica, sans-serif;
+    font-weight: normal;
+}
+
+@mixin font-bold {
+    font-family: "OpenSans-Bold", arial, helvetica, sans-serif;
+    font-weight: normal;
+}
